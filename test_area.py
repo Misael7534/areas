@@ -19,4 +19,3 @@ def test_area_triangulo():
     assert area_triangulo(4, 6) == 12
     assert area_triangulo(-4, 6) == -12
     assert area_triangulo(-4, -6) == 12
-print("✅ Todas las pruebas pasaron correctamente.")
