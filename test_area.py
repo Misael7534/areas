@@ -1,17 +1,22 @@
-# test_areas.py
+# test_area.py
+# Asegúrate de que pytest esté instalado en tu entorno: pip install pytest
+import pytest
+from funciones import cuadrado, area_circulo, area_triangulo  # Cambia 'tu_modulo' por el nombre real del archivo .py
 
-from funciones import cuadrado, area_circulo, area_triangulo
+def test_cuadrado():
+    assert cuadrado(0) is None
+    assert cuadrado(5) == 25
+    assert cuadrado(-3) == 9
 
-# Pruebas de cuadrado
-assert cuadrado(4, 4) == 16
-assert cuadrado(-2, 5) is None
+def test_area_circulo():
+    assert area_circulo(0) is None
+    assert round(area_circulo(2), 5) == 12.56636
+    assert round(area_circulo(-3), 5) == 28.27431
 
-# Pruebas de círculo
-assert round(area_circulo(2), 2) == 12.57
-assert area_circulo(-1) is None
-
-# Pruebas de triángulo
-assert area_triangulo(6, 4) == 12
-assert area_triangulo(-3, 5) is None
-
+def test_area_triangulo():
+    assert area_triangulo(0, 10) is None
+    assert area_triangulo(5, 0) is None
+    assert area_triangulo(4, 6) == 12
+    assert area_triangulo(-4, 6) == -12
+    assert area_triangulo(-4, -6) == 12
 print("✅ Todas las pruebas pasaron correctamente.")

@@ -38,7 +38,7 @@ while True:
     try:
     # este de aqui esta para que si pone un numero que no este en la lista explique por que no hace nada 
         if op>=5:
-                print("escoja una opcion que este")
+                 print("escoja una opcion que este")
                 #op==" lo hice asi por que es el unico que solo pide un dato si seleccionas este para que solo pida un dato
         if op==2:
                 valor1=float(input("Ingrese el radio en cm : "))
