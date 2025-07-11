@@ -23,7 +23,6 @@ python main.py
 ¿Qué hacer ahora?
 
 1. Abre tu editor (como VS Code).
-2. Crea un archivo nuevo y guárdalo como `README.md`.
-3. Pega el contenido de arriba.
-4. Guarda y ¡listo!
+2. pega el codigo o descargalo
+3. Guarda y ¡listo!
 
